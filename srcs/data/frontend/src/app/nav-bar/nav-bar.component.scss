@@ -1,0 +1,36 @@
+.nav_bar {
+  display: flex;
+  align-items: center;
+  background: black;
+  border: dashed;
+  border-bottom-color: white;
+}
+
+.home {
+  position: relative;
+  left: 0;
+}
+
+.play_chat {
+  position: absolute;
+  right: 0;
+}
+
+.leaderboard {
+  position: relative;
+}
+
+.login {
+  font-size: 100%;
+  text-align: center;
+}
+
+.color_perso {
+  background-color: black;
+  color: white;
+}
+
+.color_perso:hover {
+  background-color: white;
+  color: black;
+}

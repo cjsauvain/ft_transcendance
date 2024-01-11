@@ -1,0 +1,35 @@
+<div class="nav_bar">
+  <div class="home">
+    <button mat-fab extended class="color_perso" (click)="onClickHome()">
+      <mat-icon>home</mat-icon>
+      Home
+    </button>
+  </div>
+  <div class="leaderboard">
+    <button mat-fab extended class="color_perso" (click)="onClickLeaderBoard()">
+      <mat-icon>star</mat-icon>
+      LeaderBoard
+    </button>
+  </div>
+  <div class="play_chat">
+    <button mat-fab extended *ngIf="!isLoggedIn" class="color_perso" (click)="onClickLogin()">
+      <mat-icon>arrow_forward_ios</mat-icon>Login
+    </button>
+    <button mat-fab extended *ngIf="isLoggedIn" class="color_perso" (click)="onClickGame()">
+      <mat-icon>gamepad</mat-icon>
+      Play
+    </button>
+    <button mat-fab extended *ngIf="isLoggedIn" class="color_perso" (click)="onClickChat()">
+      <mat-icon>chat_bubble</mat-icon>
+      Chat
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onClickAccount()">Account</button>
+      <button mat-menu-item (click)="onClickSettings()">Settings</button>
+      <button mat-menu-item *ngIf="isLoggedIn" (click)="onClickDisconnect()" >Disconnect</button>
+    </mat-menu>
+    <button mat-fab extended *ngIf="isLoggedIn" class="color_perso" [matMenuTriggerFor]="menu">
+      <mat-icon>person</mat-icon>Profile
+    </button>
+  </div>
+</div>

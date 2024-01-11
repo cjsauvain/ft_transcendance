@@ -1,0 +1,17 @@
+<div class="buttons">
+  <div class="start-game-div">
+    <button mat-raised-button id="join-queue" *ngIf="gameID === -1 && queueJoined === null" (click)="joinQueue()">Join queue</button>
+    <button mat-raised-button id="leave-queue" *ngIf="gameID === -1 && queueJoined !== null" (click)="leaveQueue()">Leave queue</button>
+  </div>
+  <div class="game-modes-div">
+    <div class="normal-class">
+      <input type="radio" #radioButtonNormal id="normal" name="gamemode" [(ngModel)]="selectedGameMode" value="Normal">Normal
+    </div>
+    <div class="shrink-class">
+      <input type="radio" #radioButtonShrink id="shrink" name="gamemode" [(ngModel)]="selectedGameMode" value="Shrink">Shrink
+    </div>
+  </div>
+</div>
+<div id="canvas-container">
+  <canvas #canvas class="canvas" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()"></canvas>
+</div>

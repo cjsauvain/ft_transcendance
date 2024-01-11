@@ -1,0 +1,27 @@
+<head>
+    <title>Account</title>
+  </head>
+  <body>
+    <mat-tab-group class="tab">
+        <mat-tab> <ng-template mat-tab-label>
+            <span class="color-nav-bar">Profile</span>
+          </ng-template>
+          <mat-card class="profile">
+            <mat-card-header>
+              <mat-card-title-group>
+                <mat-list role="list" class="content-profile">
+                  <mat-list-item class="username" role="listitem1"></mat-list-item>
+                  <mat-list-item class="rank_win" role="listitem5">Winrate : </mat-list-item>
+                  <mat-list-item class="winrate" role="listitem3"></mat-list-item>
+                </mat-list>
+                <img class="img" id="preview" mat-card-xl-image src="{{ userAvatarSrc }}">
+              </mat-card-title-group>
+
+            </mat-card-header>
+            <mat-card-content>
+              {{""}}
+            </mat-card-content>
+          </mat-card>
+        </mat-tab>
+      </mat-tab-group>
+  </body>

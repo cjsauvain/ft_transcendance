@@ -1,0 +1,30 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  font-size: 2em;
+}
+
+input {
+  width: 20%;
+  padding: 6px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: white;
+  border-radius: 50em;
+  height: 50px;
+  width: 15%;
+  font-size: 20px;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+p {
+  color: white;
+}

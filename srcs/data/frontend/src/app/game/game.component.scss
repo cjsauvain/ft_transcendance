@@ -1,0 +1,56 @@
+.buttons {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  .start-game-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  #join-queue {
+    background: black;
+    color: white;
+    font-size: 25px;
+  }
+  #join-queue:hover {
+    background: white;
+    color: black;
+  }
+  #leave-queue {
+    background: black;
+    color: white;
+    font-size: 25px;
+  }
+  #leave-queue:hover {
+    background: white;
+    color: black;
+  }
+
+  .game-modes-div {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    gap: 1em;
+
+    .normal-class {
+      text-align: right;
+    }
+    .shrink-class {
+      text-align: left;
+    }
+  }
+}
+
+canvas {
+  background-color: black;
+  margin: auto;
+  display: block;
+  border: 5px solid white;
+  border-radius: 10px;
+  width: 70vw;
+  min-width: 640px;
+  min-height: 360px;
+  cursor: crosshair;
+  position: relative;
+}

@@ -1,0 +1,74 @@
+.title {
+  background-color: black;
+  padding: auto;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 3s ease-in-out;
+  margin-top: 80px;
+}
+
+.title h2 {
+  margin-top: -40px;
+  color: white;
+  font-size: 150px;
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.video video {
+  border: 2px solid;
+  border-color: white;
+  width: 80%;
+  max-width: 640px;
+  display: block;
+  margin: 0 auto;
+}
+
+.login {
+  font-size: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  border-top: dashed;
+  border-top-color: white;
+  margin-top: 180px;
+}
+
+.color_login {
+  background-color: black;
+  color: white;
+}
+
+.color_login:hover {
+  a {
+    color: black;
+  }
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,6 @@
+<div>
+  <p>Two-Factor Authentication</p>
+  <label for="code"></label>
+  <input type="text" id="code" name="tfa-code" placeholder="Enter code" #userInput>
+  <button type="button" (click)="verifyTfa(userInput.value)">Send</button>
+</div>

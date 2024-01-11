@@ -1,0 +1,51 @@
+<head>
+  <title>Leader Board</title>
+</head>
+<body>
+  <div class="container">
+    <br><br>
+      <div class="title">
+        <h1> 🏆 LEADERBOARD 🏆 </h1>
+      </div>
+    <div class="board" *ngIf="items[0]">
+      <div class="leader1">
+        <span class="no">1</span>
+        <img src={{items[0].img}} alt="" class="pic" />
+        <span class="name">{{items[0].name}}</span>
+        <span class="score">Winrate {{items[0].winrate}} %</span>
+      </div>
+    </div>
+    <div class="board" *ngIf="items[1]">
+      <div class="leader2">
+        <span class="no">2</span>
+        <img src={{items[1].img}} alt="" class="pic" />
+        <span class="name">{{items[1].name}}</span>
+        <span class="score">Winrate {{items[1].winrate}} %</span>
+      </div>
+    </div>
+    <div class="board" *ngIf="items[2]">
+      <div class="leader3">
+        <span class="no">3</span>
+        <img src={{items[2].img}} alt="" class="pic">
+        <span class="name">{{items[2].name}}</span>
+        <span class="score">Winrate {{items[2].winrate}} %</span>
+      </div>
+    </div>
+    <div class="board" *ngIf="items[3]">
+      <div class="leader4">
+        <span class="no">4</span>
+        <img src={{items[3].img}} alt="" class="pic" />
+        <span class="name">{{items[3].name}}</span>
+        <span class="score">Winrate {{items[3].winrate}} %</span>
+      </div>
+    </div>
+    <div class="board" *ngIf="items[4]">
+      <div class="leader5">
+        <span class="no">5</span>
+        <img src={{items[4].img}} alt="" class="pic" />
+        <span class="name">{{items[4].name}}</span>
+        <span class="score">Winrate {{items[4].winrate}} %</span>
+      </div>
+    </div>
+  </div>
+</body>

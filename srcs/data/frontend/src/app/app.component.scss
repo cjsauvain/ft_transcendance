@@ -1,0 +1,26 @@
+#homepage-logo {
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+}
+#homepage-logo a{
+  color: #e74c3c;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  line-height:1.3;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+#homepage-logo p {
+  font-size: 15px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  background: #34495e;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}

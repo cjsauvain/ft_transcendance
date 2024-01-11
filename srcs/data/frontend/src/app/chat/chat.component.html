@@ -1,0 +1,79 @@
+<div class="general screen" *ngIf="showGeneral">
+    <h2>Welcome to Live Chat</h2>
+    <div class="header">
+        <!--*************************************************-->
+        <!-- Users button that displays all the active users -->
+        <!--*************************************************-->
+        <button id="invite-users" (click)="openInviteUsersModal(); requestAllUsers()">Users</button>
+        <!--*********************************-->
+        <!-- Exit button that quits the chat -->
+        <!--*********************************-->
+        <button id="exit-chat" (click)="chatHomepage()">Exit</button>
+    </div>
+    <br>
+    <h2>Friendlist</h2>
+    <ul class="no-bullet">
+        <li *ngFor="let friend of friendList" [style.color]="'white'">
+            <button (click)="requestAllUsers(); openUserMenu(); selectTargetUser(friend.receiver); getFriendStatus(friend.receiver)">
+                    {{ friend.receiver }}
+                    <div class="status-part" [ngClass]="{'red-status': !isUserOnline}"></div>
+            </button>
+        </li>
+    </ul>
+</div>
+
+<div class="screen chat-screen" *ngIf="!showGeneral">
+    <div>
+        <h3>Chatting with: {{ targetId }}</h3>
+        <ul>
+            <li *ngFor="let msg of messagetest"  [style.color]="'white'">
+                <ng-container *ngIf="checkIfDisplayable(msg.room) && !isBlockedStatus">
+                    <span class="bold-username">{{ msg.inviting_name }}:</span> {{ msg.message }}
+                </ng-container>
+            </li>
+        </ul>
+    </div>
+
+    <input [(ngModel)]="message" (keydown.enter)="sendMessage()" />
+    <button (click)="chatGeneral()">Back</button>
+    <button (click)="sendMessage()">Send</button>
+</div>
+
+<!--****************************************************************-->
+<!-- After clicking 'Users', a box containing all the users appears -->
+<!--****************************************************************-->
+<div class="userlist-modal" [ngClass]="{'active': isInviteUsersModal}">
+    <!--*****************************************************-->
+    <!-- This box contains a list of all the different users -->
+    <!--*****************************************************-->
+    <ul class="no-bullet">
+        <li *ngFor="let user of userList">
+            <button (click)="requestAllUsers(); openUserMenu(); selectTargetUser(user)">{{ user }}</button>
+        </li>
+    </ul>
+    <!--***************************-->
+    <!-- Aswell as the back button -->
+    <!--***************************-->
+    <button (click)="closeInviteUsersModal()">Back</button>
+</div>
+
+<!--*********************************************************************************-->
+<!-- After clicking on one user, a box containing the different interactions appears -->
+<!--*********************************************************************************-->
+<div class="user-menu" [ngClass]="{'active': isUserMenu}">
+    <button (click)="privateMessageScreen()">Send a message</button>
+    <button (click)="inviteToPlay()">Invite to play</button>
+    <button (click)="viewProfile()">View profile</button>
+
+    <button *ngIf="isFriend === false" (click)="addFriend()">Add friend</button>
+    <button *ngIf="isFriend === true" (click)="deleteFriend()">Remove friend</button>
+    <button *ngIf="isBlockedStatus === false" (click)="addBlocked()">Block</button>
+    <button *ngIf="isBlockedStatus === true" (click)="deleteBlocked()">Unblock</button>
+    <button (click)="closeUserMenu()">Back</button>
+</div>
+
+<div class="gameopt-modal" [ngClass]="{'active': isGameOptModal}">
+  <button (click)="normalMode()">Normal</button>
+  <button (click)="shrinkMode()">Shrink</button>
+  <button (click)="closeGameOptModal()">Back</button>
+</div>

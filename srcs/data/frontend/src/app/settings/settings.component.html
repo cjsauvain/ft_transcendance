@@ -1,0 +1,21 @@
+<div>
+  <p><mat-icon>settings</mat-icon></p>
+  <mat-card>
+    <mat-card-content>
+      <div>
+        <p>Activate Authentication</p>
+        <mat-slide-toggle class="custom-slide-toggle" #TfaStatus [(ngModel)]="isChecked" (change)="setTfaStatus(TfaStatus.checked)">
+          Two-Factor Authentication
+        </mat-slide-toggle>
+      </div>
+      <div>
+        <p>Change name</p>
+        <mat-form-field>
+          <mat-label>New name</mat-label>
+          <input matInput [(ngModel)]="newName" placeholder="Enter New name" />
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="changeName()">Change</button>
+      </div>
+      </mat-card-content>
+  </mat-card> 
+</div>

@@ -1,0 +1,143 @@
+.five {
+  background-color: black;
+  color: white;
+}
+
+.five_finish {
+  background-color: gold;
+  color: black;
+}
+
+
+.username {
+  background-color:white;
+  font-size: 25px;
+  border-radius: 30px;
+  justify-content: center;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid black;
+  padding: 10px; 
+}
+
+.rank_win{
+  text-decoration-line: underline;
+  font-size: 20px;
+  justify-content: center;
+  font-weight:lighter;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.winrate {
+  font-size: 30px;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.avatar_button {
+  font-size: 20px;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+
+.mat-grid-list  {
+  background-color: white;
+  color: black;
+}
+
+.mat-tab-label {
+  color: white;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  margin-bottom: 60px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.achievements_finish {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+  margin-bottom: 60px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.color-nav-bar {
+  color: white;
+}
+
+.defeat-table {
+  background-color: #FF616D;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+.victory-table {
+  background-color: palegreen;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+.score_grid {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.text-table{
+  color: white;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 250px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  border-radius: 200px;
+  align-items: left;
+}
+
+.content-profile{
+
+  margin: auto;
+}
+
+.background-filled { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+  margin-bottom: 60px;
+  font-weight: bold;
+  align-self: flex-start;
+  background-color: gold;
+  margin-bottom: 60px;
+  font-weight: bold;
+  align-self: flex-start;
+}
