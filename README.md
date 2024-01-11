@@ -9,7 +9,7 @@ This is a group project for School 42 whose members are:
 # Make project work
 
 .env file :  
-  POSTGRES_USER=XXXXX  
+  POSTGRES_USER=XXXXX  
 POSTGRES_PASSWORD=XXXXX  
 POSTGRES_DB=XXXXX  
 JWT_SECRET=XXXXX  
