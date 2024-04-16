@@ -1,32 +1,40 @@
+
 # ft_transcendence
 
-This is a group project for School 42 whose members are:
+This project is a website that enables users to play pong matches with each other, developped by the following team members:
+
 - Yan Baudouin
 - Kévin Brousse
 - Arthur Chretien
 - Jordan Sauvain
 
-# Make project work
+## Setup Instructions
 
-.env file :  
-  POSTGRES_USER=XXXXX  
-  POSTGRES_PASSWORD=XXXXX  
-  POSTGRES_DB=XXXXX  
-  JWT_SECRET=XXXXX  
-  POSTGRES_USER=XXXXX  
-  POSTGRES_PASSWORD=XXXXX  
-  POSTGRES_DB=XXXXX  
-  SENDGRID_API_KEY=XXXXX  
-  SENDGRID_API_KEY_ID=XXXXX  
-  APP_UID=XXXXX  
-  APP_SECRET=XXXXX  
+Before running the project, make sure to set up your environment variables in the .env file:
 
-# Frontend :
-  Angular
+```
+POSTGRES_USER=XXXXX
+POSTGRES_PASSWORD=XXXXX
+POSTGRES_DB=XXXXX
+JWT_SECRET=XXXXX
+POSTGRES_USER=XXXXX
+POSTGRES_PASSWORD=XXXXX
+POSTGRES_DB=XXXXX
+SENDGRID_API_KEY=XXXXX
+SENDGRID_API_KEY_ID=XXXXX
+APP_UID=XXXXX
+APP_SECRET=XXXXX
+```
 
-# Backend :
-  NestJs / PostgreSQL
+## Technologies Used
 
-# Tools :
-  Docker
-  Makefile
+### Frontend:
+- Angular
+
+### Backend:
+- NestJS
+- PostgreSQL
+
+### Tools:
+- Docker
+- Makefile
