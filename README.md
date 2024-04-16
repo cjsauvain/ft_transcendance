@@ -20,3 +20,13 @@ This is a group project for School 42 whose members are:
   SENDGRID_API_KEY_ID=XXXXX  
   APP_UID=XXXXX  
   APP_SECRET=XXXXX  
+
+# Frontend :
+  Angular
+
+# Backend :
+  NestJs / PostgreSQL
+
+# Tools :
+  Docker
+  Makefile
