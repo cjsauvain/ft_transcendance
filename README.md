@@ -1,16 +1,18 @@
+# 🕹️ Transcendance
 
-# ft_transcendence
+Transcendance est une application web de type **Pong multijoueur**, développée dans le cadre du cursus 42.  
+Elle comprend une architecture **fullstack** basée sur Angular (frontend) et NestJS (backend), le tout orchestré avec Docker.
 
-This project is a website that enables users to play pong matches with each other, developped by the following team members:
+## 👥 Equipe
 
 - Yan Baudouin
 - Kévin Brousse
 - Arthur Chretien
 - Jordan Sauvain
 
-## Setup Instructions
+## 🔧 Setup Instructions
 
-Before running the project, make sure to set up your environment variables in the .env file:
+Remplir le fichier .env:
 
 ```
 POSTGRES_USER=XXXXX
@@ -26,15 +28,29 @@ APP_UID=XXXXX
 APP_SECRET=XXXXX
 ```
 
-## Technologies Used
+## 🛠️ Technologies
 
-### Frontend:
-- Angular
+- Frontend : [Angular](https://angular.io/)
+- Backend : [NestJS](https://nestjs.com/)
+- Auth : OAuth2 (via API 42)
+- Containerisation : Docker, Docker Compose
+- Base de données : PostgreSQL
 
-### Backend:
-- NestJS
-- PostgreSQL
+## 🚀 Lancer le projet en local
 
-### Tools:
-- Docker
-- Makefile
+### 1. Cloner le repo
+
+```bash
+git clone https://github.com/<user>/transcendance.git
+cd transcendence
+```
+
+### 2. Run l'application
+```
+make
+```
+
+### 3. Accéder à l'application via un navigateur
+```
+http://localhost:4200
+```
